@@ -75,24 +75,28 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 0.0,
         upperBound: 1.0);
+    _transitionHour1Controller.forward(from:0);
 
     _transitionHour2Controller = AnimationController(
         duration: Duration(milliseconds: 1500),
         vsync: this,
         lowerBound: 0.0,
         upperBound: 1.0);
+    _transitionHour2Controller.forward(from:0);
 
     _transitionMinute1Controller = AnimationController(
         duration: Duration(milliseconds: 1500),
         vsync: this,
         lowerBound: 0.0,
         upperBound: 1.0);
+    _transitionMinute1Controller.forward(from:0);
 
     _transitionMinute2Controller = AnimationController(
         duration: Duration(milliseconds: 1500),
         vsync: this,
         lowerBound: 0.0,
         upperBound: 1.0);
+    _transitionMinute2Controller.forward(from:0);
 
     _updateTime();
   }
